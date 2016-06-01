@@ -1,0 +1,185 @@
+body
+{
+	color: #222;
+	
+	.navbar-custom
+	{
+		background-color: #0c9;
+		margin: 0px;
+		border-width: 0px;
+		border-radius: 0px;
+		
+		.container-fluid
+		{
+			.navbar-header
+			{
+				.navbar-toggle
+				{
+					span
+					{
+						background-color: #fff;
+					}
+				}
+				
+				.navbar-brand
+				{
+					
+				}
+			}
+			
+			.navbar-collapse
+			{
+				.navbar-nav
+				{
+					height: 50px;
+					
+					a
+					{
+						color: #fff;
+						transition: all .1s linear 0s;
+
+						&:hover, &:focus
+						{
+							background-color: #086;
+							transition: all .1s linear 0s;
+						}
+					}
+					
+					.active
+					{
+						background-color: #086;
+					}
+				}
+				
+				.navbar-right
+				{
+					a
+					{
+						padding-top: 14px;
+					}
+				}
+			}
+		}
+	}
+	
+	.boxen
+	{
+		padding: 15px;
+		padding-top: 50px;
+		
+		h1
+		{
+			padding: 10px 15px;
+			border-style: solid;
+			border-width: 0px 0px 1px 0px;
+		}
+		
+		p
+		{
+			margin-bottom: 30px;
+		}
+		
+		.center
+		{
+			padding-top: 50px;
+			display: block;
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	
+	.leftBox
+	{
+		background-color: #fff;
+		
+		.btn-round
+		{
+			text-decoration: none;
+			padding: 10px;
+			color: #fff;
+			background-color: #0c9;
+			border-style: solid;
+			border-width: 0px;
+			border-color: #086;
+			border-radius:15px;
+			transition: all .1s linear 0s;
+			
+			&:hover
+			{
+				color: #fff;
+				background-color: #086;
+				box-shadow: 0px 3px 5px rgba(0,0,0,.6);
+				transition: all .1s linear 0s;
+			}
+		}
+	}
+	
+	.rightBox
+	{
+		background-color: #0c9;
+		color: #fff;
+		
+		.btn-round
+		{
+			text-decoration: none;
+			padding: 10px;
+			color: #0c9;
+			background-color: #fff;
+			border-style: solid;
+			border-width: 0px;
+			border-color: #086;
+			border-radius:15px;
+			transition: all .1s linear 0s;
+			
+			&:hover
+			{
+				color: #fff;
+				background-color: #086;
+				box-shadow: 0px 3px 5px rgba(0,0,0,.6);
+				transition: all .1s linear 0s;
+			}
+		}
+	}
+	
+	#home
+	{
+		background-image: url("../images/header.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+    	background-attachment: fixed;
+		background-size: cover;
+		padding: 0px;
+		/*height: ~"-webkit-calc(100% - 50px)";
+		height: ~"-moz-calc(100% - 50px)";
+		height: ~"-o-calc(100% - 50px)";
+		height: ~"calc(100% - 50px)";*/
+		height: 100%;
+		
+		.shade
+		{
+			color: #fff;
+			background-color: rgba(0,0,0,.6);
+			width: 100%;
+			height: 100%;
+			padding: 15px;
+			padding-top: 50px;
+			
+			h1
+			{
+				border-color: #fff;
+			}
+		}
+	}
+	
+	#gig
+	{
+		height: 500px;
+	}
+	
+	#band
+	{
+		height: 500px;
+	}
+	
+}
