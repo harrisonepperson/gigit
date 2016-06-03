@@ -3,9 +3,19 @@
 		<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script-->
 		
-		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
+		<script src=""></script>
+		
+		<script src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+		<script src="bootstrap-3.3.6-dist/js/npm.js"></script>
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap-datetimepicker.min.css" />
+		
+		<script src="moment/moment.js"></script>
+		<script src="bootstrap-3.3.6-dist/js/bootstrap-datetimepicker.min.js"></script>
+		
+		<!--script src="https://raw.githubusercontent.com/twbs/bootstrap/master/js/collapse.js"></script>
+		<script src="https://raw.githubusercontent.com/twbs/bootstrap/master/js/transition.js"></script-->
 		
 		<!-- Reference Less JavaScript file -->
 		<link rel="stylesheet/less" type="text/css" href="less/index.less">
@@ -42,9 +52,40 @@
 			</div>
 		</nav>
 		
+		<div class="topSpace"></div>
+		
 		<div class="container">
 			<div class="row">
 				<form>
+					
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 space">
+						<div class="row">
+							<div class="col-xs-12 shade">
+								<h3>What is Your Name?</h3>
+								
+								<input type="text" class="col-xs-12"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 shade">
+								<h3>What type of locale?</h3>
+
+								<label class="age"><input type="radio" name="locale" value="coffee"/><span class="checks">Coffee Shop</span></label><br />
+								<label class="ageReq"><input type="radio" name="locale" value="bar"/><span class="checks">Bar</span></label><br />
+								<label class="age"><input type="radio" name="locale" value="house"/><span class="checks">House</span></label><br />
+								<label class="age"><input type="radio" name="locale" value="park"/><span class="checks">Park</span></label><br />
+							</div>
+						</div>
+						<div class="row" id="ageSlider">
+							<div class="col-xs-12 shade">
+								<h3>How old are you?</h3>
+								
+								<label><input type="radio" name="age" value="young"/><span class="checks">< 18</span>
+								</label><label><input type="radio" name="age" value="young"/><span class="checks">18 - 21</span></label>
+								<label><input type="radio" name="age" value="old"/><span class="checks">> 21</span></label><br />
+							</div>
+						</div>
+					</div>
 					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 shade">
 						<h3>What type of music?</h3>
 					
@@ -69,38 +110,72 @@
 							</div>
 						</div>
 					</div>
-					
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-						<div class="row">
-							<div class="col-xs-12 shade">
-								<h3>What type of locale</h3>
-
-								<label><input type="radio" name="locale" value="coffee"/><span class="checks">Coffee Shop</span></label><br />
-								<label><input type="radio" name="locale" value="bar"/><span class="checks">Bar</span></label><br />
-								<label><input type="radio" name="locale" value="house"/><span class="checks">House</span></label><br />
-								<label><input type="radio" name="locale" value="park"/><span class="checks">Park</span></label><br />
+						
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 shade">
+						<h3>When Are you Available</h3>
+						
+						<div class="form-group">
+							<div class='input-group date' id="datetimepicker1">
+								<input type='text' value="Start" class="form-control" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-12 shadeInner">
-								<h3>How old are you?</h3>
-								
-								<label><input type="radio" name="age" value="young"/><span class="checks">< 18</span>
-								</label><label><input type="radio" name="age" value="young"/><span class="checks">18 - 21</span></label>
-								<label><input type="radio" name="age" value="old"/><span class="checks">> 21</span></label><br />
+						
+						<div class="form-group">
+							<div class='input-group date' id="datetimepicker2">
+								<input type='text' value="End" class="form-control" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="center">
-								<input type="submit" value="Submit"><input type="reset" value="Clear">
-							</div>
+					<script type="text/javascript">
+						$(function () {
+							$('#datetimepicker1').datetimepicker();
+						});
+						
+						$(function () {
+							$('#datetimepicker2').datetimepicker();
+						});
+					</script>
+						
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 shade">
+						<div class="center">
+							<input class="btn btn-custom" type="submit" value="Submit"><input class="btn btn-custom" type="reset" value="Clear">
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
-		
 	</body>
 </html>
+
+<script>
+	$(".age").click(function(){
+		$("#ageSlider").hide("fast");
+	});
+
+	$(".ageReq").click(function(){
+		$("#ageSlider").show("fast");
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

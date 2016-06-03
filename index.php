@@ -49,7 +49,7 @@
 							<h1>Connecting Live Performers near you!</h1>
 							<p>Gigit seeks to connect live performers to local venues.  Follow your favorite bands, and enjoy live entertainment at your favorite places to eat.</p>
 
-							<a href="listener.php" class="btn-round">Get Started Now!</a>
+							<a href="form.php" class="btn-round">Get Started Now!</a>
 						</div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 						<h1>Got a Band?</h1>
 						<p>So, you've got a rockin band and need somewhere to play, maybe even get a bit of gas money?  Gigit connects you to local venues so you can get paid to play at your favorite bars and coffee shops for your favorite friends and family!</p>
 
-						<a href="band.php" class="btn-round">Get Started Now!</a>
+						<a href="form.php" class="btn-round">Get Started Now!</a>
 					</div>
 				</div>
 			</div>
@@ -79,7 +79,7 @@
 						<h1>Need a Band?</h1>
 						<p>People love live entertainment, but quality acts can be hard to come by.  Gigit makes it easy to find entertainers your patrons will love.  Find the right type of music for your establishment today.</p>
 
-						<a href="venue.php" class="btn-round">Get Started Now!</a>
+						<a href="form.php" class="btn-round">Get Started Now!</a>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
 						<img src="images/mic.svg" height="80%" class="center"/>
