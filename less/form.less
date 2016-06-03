@@ -7,7 +7,7 @@ body
 	{
 		.space
 		{
-			margin:0px 10px 15px 0px;
+			//margin-right:15px;
 		}
 		
 		.shade
@@ -15,7 +15,7 @@ body
 			color: #fff;
 			background-color: rgba(0,0,0,.6);
 			padding: 15px;
-			margin: 10px 10px 15px 0px;
+			margin: 5px -10px;
 			border-radius: 5px;
 
 			h3
@@ -80,6 +80,11 @@ body
 			input[type=checkbox], input[type=radio]
 			{
 				opacity: 0;
+				margin:0px -16px 10px 0px;
+			}
+			
+			input[type=checkbox] ~ span, input[type=radio] ~span
+			{
 			}
 			
 			input[type=checkbox]:checked ~ span, input[type=radio]:checked ~ span
@@ -131,5 +136,10 @@ body
 		{
 			display:none;
 		}
+	}
+	
+	.error
+	{
+		color: #f00;
 	}
 }
